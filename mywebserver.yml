@@ -1,14 +1,17 @@
 ---
 - hosts: all
   become: yes
+  gather_facts: yes
   tasks:
     - name: i want to install webserver on ubunu nodes
       apt:
         name: apache2
         state: present
+        when: ansible_os_family =="denian" 
 
     - name: i want to start webserver on ubuntu nodes
       service:
         name: apache2
         state: started
-        
+        when: ansible_os_family =="denian"
+
