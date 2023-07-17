@@ -1,0 +1,4 @@
+---
+myvar: value
+mywebpackforubuntu: nginx
+mywebpackforredhat: httpd
