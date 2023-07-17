@@ -4,6 +4,6 @@
 172.31.4.195
 
 mywebservers: vars
-myvar: volue
+myvar: value
 mywebpackforubuntu = apache2
 mywebpackforredhat = httpd
