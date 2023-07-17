@@ -3,7 +3,7 @@
 172.31.2.118
 172.31.4.195
 
-[mywebservers: vars]
+[mywebservers:vars]
 myvar= value
 mywebpackforubuntu= apache2
 mywebpackforredhat= httpd
