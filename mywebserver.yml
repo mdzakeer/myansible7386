@@ -11,19 +11,19 @@
 
     - name: i want to start webserver on ubuntu nodes
       service:
-        name: apache2
+        name: "{{mywebpackforubuntu}}"
         state: started
       when: ansible_os_family =="Debian"
 
     - name: i want to install webserver on Redhat nodes
       ansible.builtin.dnf:
-         name: httpd
+         name: "{{mywebpackforredhat}}"
          state: present
       when: ansible_os_family =="RedHat"
 
     - name: i want to start webserver on Redhat nodes
       service: 
-        name: httpd
+        name: "{{mywebpackforredhat}}"
         state: started
       when: ansible_os_family =="RedHat"
       
