@@ -2,3 +2,8 @@
 [mywebservers]
 172.31.2.118
 172.31.4.195
+
+mywebservers: vars
+myvar: volue
+mywebpackforubuntu = apache2
+mywebpackforredhat = httpd
