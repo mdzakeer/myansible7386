@@ -5,6 +5,6 @@
    - name: execute linux command by using playbook
      command: hostname -f
 
-   - name: i want to debug first task result
+   - name: i want to debug firsttask result
      debug:
        msg: "{{myfisttaskresult}}"
