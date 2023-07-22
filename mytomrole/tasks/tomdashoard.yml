@@ -6,7 +6,7 @@
 
 - name: copy context file into node side
   template: 
-    src: templates/mytomcatuser.j2
+    src: templates/mytomcontext.j2
     dest:  /opt/tomcat/webapps/manager/META-INF/context.xml
 
 - name: copy host context file into nodes side
